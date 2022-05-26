@@ -34,6 +34,7 @@ const addValues = (arr) => {
   function redFunc(total,num)
   {
 
+    
     return total+num;
   }
 
