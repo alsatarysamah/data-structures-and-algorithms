@@ -233,6 +233,7 @@ const countNumberOfChildren = (arr) => {
   return sum;
 };
 
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 8 - Stretch Goal
 
