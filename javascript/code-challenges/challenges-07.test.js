@@ -31,11 +31,7 @@ const sortStarWarsCharacters = (starWarsArr) => {
  let x= starWarsArr.sort((a, b) => {
     return b.height - a.height;
   });
-  //  let tallestToShortest = starWarsArr.sort((a, b) => {
-
-  //   return b.height - a.height});
-
-  // return tallestToShortest;
+  
   return x;
 };
 
@@ -158,7 +154,6 @@ const listFoods = (recipe) => {
     
 str=recipe.ingredients[i].slice(recipe.ingredients[i].indexOf(" ",6)+1,recipe.ingredients[i].length);
 
-console.log(str);
    result.push(str) ;
   }
   
