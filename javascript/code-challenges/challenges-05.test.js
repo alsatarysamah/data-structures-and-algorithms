@@ -77,7 +77,7 @@ const countNumberOfElements = (arr) => {
   let counter=arr.reduce(counting,0);
   function counting(count)
   {
-    return count+1;
+    return count++;
   }
   return counter;
 };
