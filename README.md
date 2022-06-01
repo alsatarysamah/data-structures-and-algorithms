@@ -18,5 +18,13 @@ To run your tests
 
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
 
-#### Table of content
-- [reverseArray](./javascript/code-challenges/javascript/README.md)
+
+# Table of content
+
+
+- [class01](./javascript/code-challenges/javascript/class01/README.md)
+
+- [class02](./javascript/code-challenges/javascript/class02/README.md)
+
+
+

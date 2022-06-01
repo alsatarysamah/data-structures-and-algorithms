@@ -10,6 +10,7 @@ catch{return "array is null"}
 
 function reserveArrayV2(arr)
 {
+    
     return arr.reverse();
 }
 console.log(reserveArray([1,2,3])) 
