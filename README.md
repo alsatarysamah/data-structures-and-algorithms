@@ -21,3 +21,11 @@ To run your tests
 ### 401 Data Structures, Code Challenges
 
 - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
+
+# Table of content
+
+
+- [class01](./javascript/code-challenges/javascript/class01/README.md)
+
+- [class02](./javascript/code-challenges/javascript/class02/README.md)
+
