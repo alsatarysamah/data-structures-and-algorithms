@@ -15,22 +15,21 @@ in this challenge we learned
 4-how to desplay content of linked-list
 
 
-
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-insert(value)
+**insert(value)**
 
 O(1) space efficency
 
 O(1) time efficency
 
-includes(value)
+**includes(value)**
 
 O(1) space efficency
 
 O(n) time efficency
 
-toString()
+**toString()**
 
 O(1) space efficency
 
