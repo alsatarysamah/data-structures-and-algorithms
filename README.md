@@ -29,3 +29,7 @@ To run your tests
 
 - [class02](./javascript/code-challenges/javascript/class02/README.md)
 
+- [class03](./javascript/code-challenges/javascript/class03/READ.md)
+
+ - [class04](./javascript/code-challenges/javascript/class04/README.md)
+
