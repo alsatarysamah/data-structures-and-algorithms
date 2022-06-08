@@ -4,6 +4,7 @@ fibonacci function that accepts an integer, and returns the nth number in the Fi
 fibonacci(n)=fibonacci(n-1)+fibonacci(n-2);
 
 
+
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 ![](./Fibonacci.png)
