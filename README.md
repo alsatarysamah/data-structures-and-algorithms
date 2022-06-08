@@ -31,3 +31,5 @@ To run your tests
 - [class04](./javascript/code-challenges/javascript/class04/README.md)
 
 
+
+- [class05](./javascript//code-challenges/javascript/class05/README.md)
