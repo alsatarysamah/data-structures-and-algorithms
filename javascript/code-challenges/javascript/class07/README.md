@@ -9,7 +9,7 @@ Return the node’s value that is k places from the tail of the linked list.
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![](./KthFromEnd.pngo)
+![](./KthFromEnd.png)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
