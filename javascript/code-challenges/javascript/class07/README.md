@@ -9,7 +9,7 @@ Return the node’s value that is k places from the tail of the linked list.
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-![](./Screenshot(216).png)
+![](https://github.com/alsatarysamah/data-structures-and-algorithms/blob/main/javascript/code-challenges/javascript/class07/Screenshot%20(216).png)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
