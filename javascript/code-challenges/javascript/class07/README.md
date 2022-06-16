@@ -16,7 +16,7 @@ Return the node’s value that is k places from the tail of the linked list.
 
 O(1) space efficency
 
-O(n) time efficency
+O(n^2) time efficency
 
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
