@@ -4,6 +4,7 @@ function that Zip the two linked lists together into one so that the nodes alter
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
+[PR](https://github.com/alsatarysamah/data-structures-and-algorithms/pull/26)
 ![](./llZip.png)
 
 ## Approach & Efficiency
