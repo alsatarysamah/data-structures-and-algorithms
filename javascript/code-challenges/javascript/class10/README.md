@@ -1,8 +1,6 @@
 # Stacks and Queues
 <!-- Short summary or background information -->
-[PR](
-    
-)
+[PR](https://github.com/alsatarysamah/data-structures-and-algorithms/pull/30)
 ## Stack
 
 A stack is a data structure that consists of Nodes. Each Node references the next Node in the stack, but does not reference its previous.
