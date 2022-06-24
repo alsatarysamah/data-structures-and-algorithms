@@ -7,7 +7,7 @@ utilize 2 Stack instances to create and manage the queue.
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
 
-[PR]()
+[PR](https://github.com/alsatarysamah/data-structures-and-algorithms/pull/32/)
 
 ![](./enqueue.png)
 ![](./dequeue.png)
