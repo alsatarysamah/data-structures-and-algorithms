@@ -16,13 +16,13 @@ utilize 2 Stack instances to create and manage the queue.
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 enqueue()
 
-O(n) space efficiency
+O(1) space efficiency
 
 O(n) time efficiency
 
 dequeue()
 
-O(n) space efficiency
+O(1) space efficiency
 
 O(n) time efficiency
 
