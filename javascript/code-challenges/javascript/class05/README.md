@@ -1,6 +1,7 @@
 # fibonacci function
 <!-- Description of the challenge -->
 fibonacci function that accepts an integer, and returns the nth number in the Fibonacci sequence.
+
 fibonacci(n)=fibonacci(n-1)+fibonacci(n-2);
 
 
