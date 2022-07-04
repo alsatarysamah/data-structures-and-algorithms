@@ -1,0 +1,17 @@
+{
+  "name": "class15",
+  "version": "1.0.0",
+  "description": "<!-- Short summary or background information --> The tree is one of the most common data structures in computer science and the natural way to model certain subject areas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^28.1.2",
+    "supertest": "^6.2.4",
+    "treeify": "^1.1.0"
+  }
+}

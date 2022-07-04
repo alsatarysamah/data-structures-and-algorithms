@@ -1,8 +1,9 @@
 "use strict";
-const Node = require('./node');
+
+const Node = require("./node");
 class BST {
   constructor(root) {
-    this.root=root;
+    this.root = root;
   }
   add(value) {
     let newNode = new Node(value);
@@ -31,6 +32,7 @@ class BST {
     };
     insert();
   }
+
   contains(value) {
     let isHere = false;
     let search = (node) => {
