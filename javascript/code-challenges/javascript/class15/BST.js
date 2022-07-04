@@ -4,30 +4,33 @@ class BST {
   constructor(root) {
     this.root=root;
   }
-  // add(value) {
-  //   var newNode = new Node(value);
-  //   if (this.root === null) {
-  //     this.root = newNode;
-  //     return this;
-  //   }
-  //   let current = this.root;
-  //   while (current) {
-  //     // if (value === current.value) return undefined;
-  //     if (value < current.value) {
-  //       if (current.left === null) {
-  //         current.left = newNode;
-  //         return this;
-  //       }
-  //       current = current.left;
-  //     } else {
-  //       if (current.right === null) {
-  //         current.right = newNode;
-  //         return this;
-  //       }
-  //       current = current.right;
-  //     }
-  //   }
-  // }
+  add(value) {
+    let newNode = new Node(value);
+    if (this.root === null) {
+      this.root = newNode;
+      return 1;
+    }
+    let curr = this.root;
+    // let insert=()=>{}
+    let insert = () => {
+      if (value < curr.value) {
+        if (curr.left === null) {
+          curr.left = newNode;
+          return 1;
+        }
+        curr = curr.left;
+        insert();
+      } else {
+        if (curr.right === null) {
+          curr.right = newNode;
+          return 1;
+        }
+        curr = curr.right;
+        insert();
+      }
+    };
+    insert();
+  }
   contains(value) {
     let isHere = false;
     let search = (node) => {
