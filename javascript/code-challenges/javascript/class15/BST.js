@@ -13,8 +13,7 @@ class BST {
     }
     let curr = this.root;
     // let insert=()=>{}
-    let insert=()=>{
-      
+    let insert = () => {
       if (value < curr.value) {
         if (curr.left === null) {
           curr.left = newNode;
@@ -28,9 +27,9 @@ class BST {
           return 1;
         }
         curr = curr.right;
-        insert()
+        insert();
       }
-    }
+    };
     insert();
   }
 
