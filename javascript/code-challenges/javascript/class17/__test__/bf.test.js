@@ -28,7 +28,7 @@ describe("Binary Tree",()=>{
         tree = new BinaryTree(one);
     });
 test ("tree-breadth-first",()=>{
-    expect(tree.breadthFirst()).toStrictEqual([1, 2, 3, 6, 4, 5, 7, 8, 9])
+    expect(tree.breadthFirst()).toStrictEqualB([1, 2, 3, 6, 4, 5, 7, 8, 9])
 })
 
 })
