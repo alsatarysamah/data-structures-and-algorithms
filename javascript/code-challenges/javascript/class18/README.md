@@ -12,6 +12,8 @@ If the value is not divisible by 3 or 5, simply turn the number into a String.
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
+[PR](https://github.com/alsatarysamah/data-structures-and-algorithms/pull/39/)
+
 ![](./Screenshot%20(304).png)
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
