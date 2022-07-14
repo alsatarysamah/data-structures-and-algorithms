@@ -3,7 +3,7 @@
 function that deciede  whether or not the brackets in the string are balanced
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-[PR]()
+[PR](https://github.com/alsatarysamah/data-structures-and-algorithms/pull/34)
 
 ![](./bracketsValidation.png)
 
