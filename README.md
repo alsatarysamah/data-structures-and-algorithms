@@ -59,3 +59,5 @@ To run your tests
 - [class18](./javascript/code-challenges/javascript/class18/README.md)
 
 - [class19](./javascript/code-challenges/javascript/class19/README.md)
+
+- [class26](./javascript/code-challenges/javascript/class26/README.md)
