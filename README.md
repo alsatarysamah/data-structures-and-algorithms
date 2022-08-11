@@ -63,3 +63,5 @@ To run your tests
 
 - [class26](./javascript/code-challenges/javascript/class26/README.md)
 
+- [class27](./javascript/code-challenges/javascript/class26/README.md)
+
