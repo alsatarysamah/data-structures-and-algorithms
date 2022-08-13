@@ -5,7 +5,7 @@ merge sort is one of the  sorting algorithms
 # Whiteboard Process
 <!-- Embedded whiteboard image -->
 [PR]()
-![](./insertionSort.png)
+![](./msUml.png)
 
 # Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
