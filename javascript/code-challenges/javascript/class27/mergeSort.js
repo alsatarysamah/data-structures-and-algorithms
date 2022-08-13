@@ -1,25 +1,46 @@
+"use strict";
+
 function mergeSort(arr) {
-    
-    if (arr.length <= 1) 
-    return arr
-    let mid = Math.floor(arr.length / 2)
-    let right = mergeSort(arr.slice(mid))
-    let left = mergeSort(arr.slice(0, mid))
-    console.log(right);
-    console.log(left);
-    return merge(left, right)
+  let n = arr.length;
+  let mid = Math.floor(n / 2);
+  let  left = arr.slice(0, mid);
+  let  right = arr.slice(mid, n);
+
+  if (n<= 1) {
+    return arr;
   }
-  function merge(left, right) {
-    let sort = [] 
-    while (left.length && right.length) {
-      
-      if (left[0] < right[0]) {
-        sort.push(left.shift())
-      } else {
-        sort.push(right.shift())
-      }
-    //   console.log(sort);
+  mergeSort(left);
+  mergeSort(right);
+
+  let i = 0;
+  let j = 0;
+  let k = 0;
+
+  while (i < left.length && j < right.length) {
+    if (left[i] < right[j]) {
+      arr[k] = left[i];
+      i++;
+    } else {
+      arr[k] = right[j];
+      j++;
     }
-     return [...sort, ...left, ...right]
+    k++;
   }
-  console.log(mergeSort([8,4,23,42,16,15]));
+
+  while (j < right.length) {
+    arr[k] = right[j];
+    k++;
+    j++;
+  }
+  while (i < left.length) {
+    arr[k] = left[i];
+    i++;
+    k++;
+  }
+
+  
+  return arr;
+}
+
+console.log(mergeSort([8, 4, 23, 42, 16, 15]));
+module.exports=mergeSort;
