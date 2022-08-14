@@ -5,7 +5,7 @@ Quick sort is one of the  sorting algorithms
 # Whiteboard Process
 <!-- Embedded whiteboard image -->
 [PR]()
-![](./quick%20sort%20WB.png)
+![](./qs.png)
 
 # Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
