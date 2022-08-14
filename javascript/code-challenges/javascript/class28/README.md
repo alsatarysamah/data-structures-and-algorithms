@@ -8,7 +8,7 @@ Quick sort is one of the  sorting algorithms
 
 [PR](https://github.com/alsatarysamah/data-structures-and-algorithms/pull/46)
 
-![](./quick%20sort%20WB.png)
+![](./qs.png)
 
 
 # Approach & Efficiency
