@@ -4,7 +4,9 @@ Quick sort is one of the  sorting algorithms
 
 # Whiteboard Process
 <!-- Embedded whiteboard image -->
-[PR]()
+
+[PR](https://github.com/alsatarysamah/data-structures-and-algorithms/pull/46)
+
 ![](./quick%20sort%20WB.png)
 
 # Approach & Efficiency
