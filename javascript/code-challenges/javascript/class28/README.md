@@ -4,8 +4,12 @@ Quick sort is one of the  sorting algorithms
 
 # Whiteboard Process
 <!-- Embedded whiteboard image -->
-[PR]()
+
+
+[PR](https://github.com/alsatarysamah/data-structures-and-algorithms/pull/46)
+
 ![](./qs.png)
+
 
 # Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
