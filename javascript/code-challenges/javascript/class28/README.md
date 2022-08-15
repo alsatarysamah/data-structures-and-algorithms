@@ -13,8 +13,6 @@ Quick sort is one of the  sorting algorithms
 O(n^2) space efficiency
 
 O(nlogn) time efficiency
-
-
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
 node quickSort.js 
