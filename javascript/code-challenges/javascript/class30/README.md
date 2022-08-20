@@ -12,7 +12,7 @@ Define a method for adding key-value pairs for the hash tables.
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-set
+**set**
 
 O(1) space efficiency
 
