@@ -2,7 +2,7 @@ const Hashmap = require("../class30/hashtable");
 
 function repeated(str) {
   str = str.toLowerCase();
-  str = str.replaceAll(",", "");
+  // str = str.replaceAll(",", "");
   let arr = str.split(" ");
   let hash = new Hashmap();
   hash.set(arr[0], "01");
