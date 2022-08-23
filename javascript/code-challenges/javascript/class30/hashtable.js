@@ -83,12 +83,12 @@ myhashmap.set("yara", "04");
 myhashmap.set("elyan", "05");
 myhashmap.set("tamara", "06");
 myhashmap.set("ayman", "01");
-myhashmap.map.forEach((ll) => {
-  console.log(ll.values());
-})
+// myhashmap.map.forEach((ll) => {
+//   console.log(ll.values());
+// })
 
 
-console.log(myhashmap.get("elyan"));
+// console.log(myhashmap.get("elyan"));
 // console.log(myhashmap.contain("samah"));
 // console.log(myhashmap.keys());
 
