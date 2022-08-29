@@ -73,5 +73,7 @@ To run your tests
 
 - [class32](./javascript/code-challenges/javascript/class32/README.md)
 
+- [class33](./javascript/code-challenges/javascript/class33/README.md)
+
 
 
