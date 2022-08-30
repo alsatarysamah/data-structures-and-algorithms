@@ -14,7 +14,7 @@ Return: The returned data structure that holds the results is up to you. It does
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-[PR]()
+[PR](https://github.com/alsatarysamah/data-structures-and-algorithms/pull/52)
 
 ![](./left%20join%20WB.png)
 
