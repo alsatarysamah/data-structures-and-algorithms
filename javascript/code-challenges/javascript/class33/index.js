@@ -12,8 +12,10 @@ hashMap2.set("1","umelyan")
 hashMap2.set("2","abu anwar")
 hashMap2.set("5","ameen")
 hashMap2.set("6","sara")
-//1.
-leftjoin(hashMap,hashMap)
+hashMap2.map.forEach((ll) => {
+  console.log(ll.values());
+})
+leftjoin(hashMap,hashMap2)
 
 
 

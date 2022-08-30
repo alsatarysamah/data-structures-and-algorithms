@@ -16,7 +16,7 @@ Return: The returned data structure that holds the results is up to you. It does
 <!-- Embedded whiteboard image -->
 [PR]()
 
-![]()
+![](./left%20join%20WB.png)
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
