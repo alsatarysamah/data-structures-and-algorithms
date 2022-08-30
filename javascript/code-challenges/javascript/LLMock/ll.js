@@ -130,15 +130,38 @@ class LL {
     // return e.message;
     //     }
   }
+  ////////////remove duplicate
+  doublicate() {
+    try {
+      if (this.length == 0) throw new Error("empty LL");
+      let curr = this.head;
+      let next;
+      let prev;
+      while (curr) {
+         next = curr.next;
+         prev = curr;
+        while (next) {
+          if (curr.value == next.value) {
+            prev.next = next.next;
+            // next = next.next;
+            // next.next = null;
+          }
+         
+          next = next.next;
+          prev = prev.next;
+        }
+        curr = curr.next;
+      }
+    } catch (e) {
+      return e.message;
+    }
+  }
+
+  ////////////////////////////
   plandmore() {
     let j = this.length - 1;
     let isPlandmore = false;
 
-
-
-
-
-    
     for (let i = 0; i < Math.floor(this.length / 2); i++) {
       if (this.getByIndex(i) == this.getByIndex(j)) {
         isPlandmore = true;
@@ -149,14 +172,41 @@ class LL {
     }
     return isPlandmore;
   }
+  rm() {
+    var ptr1 = null,
+      ptr2 = null,
+      dup = null;
+    ptr1 = this.head;
+
+    // Pick elements one by one
+    while (ptr1 != null && ptr1.next != null) {
+      ptr2 = ptr1;
+      // Compare the picked element with
+      // rest of the elements
+      while (ptr2.next != null) {
+        // If duplicate then delete it
+        if (ptr1.value == ptr2.next.value) {
+          // Sequence of steps is important here
+          // dup = ptr2.next;
+          ptr2.next = ptr2.next.next;
+        } else {
+          ptr2 = ptr2.next;
+        }
+      }
+      ptr1 = ptr1.next;
+    }
+  }
 }
 let ll = new LL();
 ll.append(5);
-ll.append(1);
-// ll.append(1);
-ll.append(4);
+// ll.append(5);
+// ll.append(5);
+// ll.append(5);
 ll.append(5);
-
+ll.append(7);
+ll.append(2);
+// ll.append(10);
+//10 12 11 11 12 11 10
 // console.log(ll.toString());
 // console.log(ll.isEmpty());
 // console.log(ll.insertAt("99", 1));
@@ -168,4 +218,7 @@ ll.append(5);
 // console.log(ll.toString());
 // console.log(ll.reverse());
 // console.log(ll.toString());
-console.log(ll.plandmore());
+// console.log(ll.plandmore());
+console.log(ll.toString());
+ll.doublicate();
+console.log(ll.toString());

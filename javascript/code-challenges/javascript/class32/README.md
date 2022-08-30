@@ -14,9 +14,9 @@ output: hashmap
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-O(n^2) space efficiency
+O(n) space efficiency
 
-O(n^2) time efficiency
+O(n) time efficiency
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
 node index.js 
