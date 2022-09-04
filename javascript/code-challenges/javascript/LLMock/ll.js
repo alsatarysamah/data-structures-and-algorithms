@@ -5,6 +5,28 @@ class LL {
     this.head = null;
     this.length = 0;
   }
+  removeDouplicate() {
+    try {
+      if (this.length == 0) throw new Error("LL is empty");
+      let curr2 = this.head;
+
+      while (curr2) {
+      let curr = this.head;
+      while (curr) {
+        if (curr.next)
+          if (curr.value == curr.next.value) {
+            curr.next = curr.next.next;
+            curr = curr.next.next;
+          } 
+            curr = curr.next;
+          
+      }
+      curr2 = curr2.next;
+    }
+    } catch (e) {
+      return e.message;
+    }
+  }
   append(value) {
     let newNode = new Node(value);
     if (this.head == null) {
@@ -138,15 +160,15 @@ class LL {
       let next;
       let prev;
       while (curr) {
-         next = curr.next;
-         prev = curr;
+        next = curr.next;
+        prev = curr;
         while (next) {
           if (curr.value == next.value) {
             prev.next = next.next;
             // next = next.next;
             // next.next = null;
           }
-         
+
           next = next.next;
           prev = prev.next;
         }
@@ -201,10 +223,16 @@ let ll = new LL();
 ll.append(5);
 // ll.append(5);
 // ll.append(5);
-// ll.append(5);
 ll.append(5);
 ll.append(7);
-ll.append(2);
+ll.append(7);
+ll.append(8);
+ll.append(8);
+ll.append(8);
+ll.append(9);
+
+
+
 // ll.append(10);
 //10 12 11 11 12 11 10
 // console.log(ll.toString());
@@ -220,5 +248,5 @@ ll.append(2);
 // console.log(ll.toString());
 // console.log(ll.plandmore());
 console.log(ll.toString());
-ll.doublicate();
+ll.removeDouplicate();
 console.log(ll.toString());
