@@ -1,12 +1,33 @@
-'use strict';
-const BinaryTree = require('./binary-tree');
-const Node = require('./node');
-const BTS=require("./BST");
-const treeify=require("treeify")
+"use strict";
+const BinaryTree = require("./binary-tree");
+const Node = require("./node");
+// const BTS=require("./BST");
+// const treeify=require("treeify")
+
+function isBST(tree) {
+  let arr = [];
+  let isHere=true;
+  function traverse(node) {
+    if (node.left) {
+      traverse(node.left);
+    }
+    arr.push(node.value);
+
+    if (arr.length >= 2&& arr[arr.length - 1] < arr[arr.length - 2]) {
+        isHere= false;
+      }
+   
+    if (node.right) {
+      traverse(node.right);
+    }
+  }
+  traverse(tree.root);
+  return isHere;
+}
 
 let tree = null;
 
-let one = new Node(1);
+let one = new Node(100);
 let two = new Node(2);
 let three = new Node(3);
 let four = new Node(4);
@@ -27,4 +48,5 @@ three.right = five;
 
 tree = new BinaryTree(one);
 
-console.log(tree.findMax())
+// console.log(tree.findMax())
+console.log(isBST(tree));
