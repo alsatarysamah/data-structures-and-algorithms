@@ -269,41 +269,191 @@ function indexOffirst(arr) {
 // console.log(indexOffirst([3,5,10,2,7,7,1]));
 function timeOfMeasurment(i) {
   let count = 0;
- while(i>0){
+  while (i > 0) {
     console.log(i);
     if (i % 2 === 0) {
-        i=i/2;
-      
+      i = i / 2;
     } else i--;
     count++;
   }
   return count;
 }
 // console.log("7. timeOfMeasurment : ", timeOfMeasurment(14));
-function reversedNum (revNum){
-    let reverse= 0;
-    let lastNum ;
-    while (revNum!=0){
-      lastNum=revNum%10;
-      reverse=reverse*10+lastNum
-      revNum=Math.floor(revNum/10)
-    }
-    return reverse;
+function reversedNum(revNum) {
+  let reverse = 0;
+  let lastNum;
+  while (revNum != 0) {
+    lastNum = revNum % 10;
+    reverse = reverse * 10 + lastNum;
+    revNum = Math.floor(revNum / 10);
   }
+  return reverse;
+}
 //   console.log('12. reversedNum : ' ,reversedNum(1596));
 
-function isArmstrongNum (armestrongNum){
-    let n = armestrongNum.toString().split('');
-    let result =0;
-    for(let i =0; i<n.length; i++){
-    
-      result+=n[i]**n.length;
-    }
-    if(result===armestrongNum)return true;
-    else return false;
+function isArmstrongNum(armestrongNum) {
+  let n = armestrongNum.toString().split("");
+  let result = 0;
+  for (let i = 0; i < n.length; i++) {
+    result += n[i] ** n.length;
   }
-  console.log('15. isArmstrongNum : ' ,isArmstrongNum(153));
-  
+  if (result === armestrongNum) return true;
+  else return false;
+}
+//   console.log('15. isArmstrongNum : ' ,isArmstrongNum(153));
+function removedublicate(str) {
+  let result = [];
+  let arr = str.split("");
+  for (let i = 0; i < arr.length; i++) {
+    if (arr.indexOf(arr[i]) == arr.lastIndexOf(arr[i])) result.push(arr[i]);
+  }
+  return arr.length === result.length;
+}
+// console.log(removedublicate("smah"));
+function obj(str) {
+  let obj = {};
+  let arr = str.split("");
+  for (let i = 0; i < arr.length; i++) {
+    if (obj[arr[i]]) {
+      return false;
+    } else {
+      obj[arr[i]] = 1;
+    }
+  }
+  return true;
+}
+// console.log(obj("smahaaa"));
+//aaabbcdd  a3 b2c1d2
+function count(str) {
+  let result = [];
+  let arr2 = [];
+  let arr = str.split("");
+  for (let i = 0; i < arr.length; i++) {
+    if (result[result.length - 1] == arr[i]) {
+      let y = result.pop();
+      let x = arr2.pop();
+      result.push(y);
+      arr2.push(x + 1);
+    } else {
+      result.push(arr[i]);
+      arr2.push(1);
+    }
+  }
+  let x = [];
+  for (let i = 0; i < result.length; i++) {
+    x.push(result[i]);
+    x.push(arr2[i]);
+  }
+  return x.join("");
+}
+// console.log(count("aaabbbcadd"));
+function jded(str) {
+  let count = 1;
+  let arr = str.split("");
+  let letters = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === arr[i + 1]) {
+      count += 1;
+    } else {
+      letters.push(`${arr[i]}${count}`);
+      count = 1;
+    }
+  }
+  return letters.join("");
+}
+// console.log(jded("aaaatteeah"));
+function doublicate(arr) {
+  let len1 = arr.length;
+  for (let i = 0; i < len1 + 1; i++) {
+    if (i == 0) arr.splice(i, 0, arr[i]);
+    else if (arr[i] != arr[i + 1]) {
+      arr.splice(i + 1, 0, arr[i + 1]);
+    }
+    if (i == len1) arr.splice(+1, 0, arr[i + 1]);
+  }
+  return arr;
+}
+// console.log(doublicate([1, 2, 3, 4]));
+// let a=1,b=2;
+// [a,b]=[b,a]
+// console.log(a,b);
+let set = new Set([1, 2, 2, 3, 5, 5]);
+// console.log([...set]);
 
+function reversee(str) {
+  let arr = str.split(" ");
+  console.log(arr);
+  let res = [];
+  for (let i = arr.length - 1; i >= 0; i--) {
+    res = [...res, arr[i]];
+  }
+  return res.join(" ");
+}
+// console.log(reversee("hi samah how"));//h i  s a m a h
 
+function doublicatee(arr) {
+  let obj = {};
+  let arr2 = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (!obj[arr[i]]) {
+      arr2.push(arr[i]);
+      obj[arr[i]] = 1;
+    }
+  }
+  return [...set];
+}
 
+// console.log(doublicatee([1,2,3,3,8,9,7,2]));
+function pop(str) {
+  let arr = str.split("");
+  let str2 = "";
+  while (arr.length > 0) {
+    let x = arr.pop();
+    let y = arr.shift();
+    str2 += x + y;
+  }
+  return str2;
+}
+// console.log(pop("123456"));
+function rev(num) {
+  let rem = 0;
+  let shigt = 0;
+  while (num != 0) {
+    console.log(num);
+    rem = num % 10;
+    shigt = shigt * 10 + rem;
+    num = Math.floor(num / 10);
+  }
+  return shigt;
+  /**
+   *
+   *
+   */
+}
+// console.log(rev(123));
+function timesOfRepeatedStr(string) {
+  let obj = {};
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] in obj) {
+      obj[string[i]] += 1;
+    } else {
+      obj[string[i]] = 1;
+    }
+  }
+  return obj;
+}
+// console.log('11. timesOfRepeatedStr : ' ,timesOfRepeatedStr("ssrrssyy"));
+
+// [1, 2, 3, 4, 5, 6], idx = 3 // output: [4, 1, 5, 2, 6, 3]
+
+function shuffle(arr, idx) {
+  let res = [];
+  let len = idx > arr.length - idx ? idx : arr.length - idx;
+  for (let i = 0; i < len; i++) {
+    if (arr[idx]) res.push(arr[idx]);
+    res.push(arr[i]);
+    idx++;
+  }
+  return res;
+}
+console.log(shuffle([1, 2, 3, 4, 5, 6],3));
