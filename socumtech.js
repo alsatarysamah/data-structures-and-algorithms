@@ -27,7 +27,7 @@ function reverse(num){
     }
     return rev;
 }
-
+//find the anagram if two word has the same characters for example word 1: listen, word 2: silent, if the characters are the same return true otherwise return false
 
 //str1="eat"  str2="ate"
 //str1="bar " str2="bare"
