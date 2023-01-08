@@ -1,4 +1,4 @@
-# Tree Intersection function
+# Breadth first traverse for graph
 <!-- Description of the challenge -->
 Write a function that implement breadth first traverse for graph
 
@@ -8,7 +8,7 @@ output: linked list
 
 ## Whiteboard Process
 <!-- Embedded whiteboard image -->
-[PR]()
+[PR](https://github.com/alsatarysamah/data-structures-and-algorithms/pull/53)
 
 ![](./graph%20traverse.png)
 

@@ -1,6 +1,7 @@
 # Hashtables
 <!-- Short summary or background information -->
-[PR]()
+[PR](https://github.com/alsatarysamah/data-structures-and-algorithms/pull/48)
+
 a “Hash table” is a data structure that can be utilized to map keys to their specified values.
 ## Challenge
 <!-- Description of the challenge -->
