@@ -14,11 +14,11 @@ console.log("Reserve Array==> ", reverseArray1([1, 2, 3]));
 function duplicateItemArray(arr) {
   let res = [];
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === arr[i+1] && !res.includes(arr[i])) res.push(arr[i]);
+    if (arr[i] === arr[i+1] && res[res.length-1]!=arr[i]) res.push(arr[i]);
   }
   return res ;
 }
-console.log("Duplicate Item in Sorted Array ==>",duplicateItemArray([1,1,2,3,4,4,4,5]));
+console.log("Duplicate Item in Sorted Array ==>",duplicateItemArray([1,1,2,2,2,3,4,4,,4,5]));
 ////////////////////////////////////
 function countOccurrences(arr) {
   let output = arr.reduce((acc, curr) => {
