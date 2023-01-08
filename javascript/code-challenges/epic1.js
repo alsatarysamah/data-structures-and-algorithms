@@ -22,14 +22,13 @@ console.log("Duplicate Item in Sorted Array ==>",duplicateItemArray([1,1,2,2,2,3
 ////////////////////////////////////
 function countOccurrences(arr) {
   let output = arr.reduce((acc, curr) => {
-    if (acc[curr]) acc[curr] += 1;
-    else acc[curr] = 1;
+    acc[curr]?acc[curr] += 1:acc[curr] = 1;
     return acc;
   }, {});
   return output;
 }
 console.log(
   "Count of Occurrences ==> ",
-  countOccurrences([1, 1, 1, 2, 3, 6, 6])
+  countOccurrences([1, 1, 1, 2, 3, 6, 6,1])
 );
 ////////////////////////////////////////////////////////
