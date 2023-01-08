@@ -2,16 +2,25 @@
  * array where the fist element will be starting from that index and the second
  * will be the original one and so on: //
  * exp: // input: [1, 2, 3, 4, 5, 6], idx = 3 // output: [4, 1, 5, 2, 6, 3]  */
+// function two(arr, index) {
+//   let arr2 = [];
+//   arr2.push(arr[index]);
+//   for (let i = 0; i < index; i++) {
+//     if (arr[i]) arr2.push(arr[i]);
+//     if (arr[index + i + 1]) arr2.push(arr[index + i + 1]);
+//   }
+//   return arr2;
+// }
 function two(arr, index) {
   let arr2 = [];
-  arr2.push(arr[index]);
+  // arr2.push(arr[index]);
   for (let i = 0; i < index; i++) {
-    if (arr[i]) arr2.push(arr[i]);
-    if (arr[index + i + 1]) arr2.push(arr[index + i + 1]);
+    arr2.push(arr[index+i]);
+    arr2.push(arr[i])
   }
   return arr2;
 }
-// console.log(two([1, 2, 3, 4, 5, 6], 3));
+// console.log("***********",two([1, 2, 3, 4, 5, 6], 3));
 /**Find all the missing numbers between the min and the max number in this array
  *  (No built in methods allowed) // array = [0, 5, 4, 9, 3];  */
 function numbers(arr) {
@@ -296,11 +305,12 @@ function isArmstrongNum(armestrongNum) {
   let result = 0;
   for (let i = 0; i < n.length; i++) {
     result += n[i] ** n.length;
+    console.log("nnnnnnnnn",n[i] ** n.length);
   }
   if (result === armestrongNum) return true;
   else return false;
 }
-//   console.log('15. isArmstrongNum : ' ,isArmstrongNum(153));
+  // console.log('15. isArmstrongNum : ' ,isArmstrongNum(153));
 function removedublicate(str) {
   let result = [];
   let arr = str.split("");
@@ -400,10 +410,10 @@ function doublicatee(arr) {
       obj[arr[i]] = 1;
     }
   }
-  return [...set];
+  return [...arr];
 }
 
-// console.log(doublicatee([1,2,3,3,8,9,7,2]));
+// console.log("",doublicatee([1,2,3,3,8,9,7,2]));
 function pop(str) {
   let arr = str.split("");
   let str2 = "";

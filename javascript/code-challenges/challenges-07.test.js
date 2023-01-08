@@ -322,7 +322,7 @@ describe("Testing challenge 4", () => {
 });
 
 describe("Testing challenge 5", () => {
-  test("It should return an array of individual letters", () => {
+  test("It should return an array of indual letters", () => {
     expect(wordsToCharList("Gregor")).toStrictEqual([
       "G",
       "r",
